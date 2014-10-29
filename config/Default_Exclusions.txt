@@ -1,0 +1,15 @@
+java\/util\/jar\/.*
+java\/util\/prefs\/.*
+java\/util\/regex\/.*
+java\/util\/spi\/.*
+java\/util\/zip\/.*
+java\/net\/.*
+java\/nio\/.*
+java\/sql\/.*
+java\/rmi\/.*
+java\/awt\/.*
+javax\/.*
+org\/omg\/.*
+org\/w3c\/.*
+sun\/.*
+com\/sun\/.*

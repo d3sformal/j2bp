@@ -1,0 +1,1 @@
+implies (and (= mget(map,fread(rectangles,this),fl1) fl2) (and (= fread(top,fl2) fl3) (= fread(left,fl2) fl4))) (not (= aread(arr,aread(arr,fread(pixels,this),fl3),fl4) 0));paper.Image.render:39

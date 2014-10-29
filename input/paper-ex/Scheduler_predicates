@@ -1,0 +1,31 @@
+[method: paper.Scheduler.main]
+= mget(map,local0,1) bot
+= mget(map,local0,1) null
+= mget(map,local0,2) bot
+= mget(map,local0,2) null
+= mget(map,local0,3) bot
+= mget(map,local0,3) null
+= mget(map,local1,1) bot
+= mget(map,local1,1) 1
+= mget(map,local1,2) bot
+= mget(map,local1,2) 1
+= mget(map,local1,3) bot
+= mget(map,local1,3) 1
+morder(mit,local1,bot,bot)
+morder(mit,local1,bot,2)
+morder(mit,local1,bot,3)
+morder(mit,local1,2,3)
+morder(mit,local1,2,bot)
+morder(mit,local1,3,bot)
+morder(mit,local1,bot,local10)
+morder(mit,local1,local10,bot)
+morder(mit,local1,2,local10)
+morder(mit,local1,local10,2)
+morder(mit,local1,3,local10)
+morder(mit,local1,local10,3)
+= local2 null
+= local3 null
+= local4 null
+= local6 2
+= local6 3
+= tmpr11 0

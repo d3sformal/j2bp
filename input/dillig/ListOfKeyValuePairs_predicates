@@ -1,0 +1,79 @@
+[method: dillig.ListOfKeyValuePairs.main]
+= mget(map,local0,45) 8
+= mget(map,local0,23) 19
+= mget(map,local0,45) bot
+= mget(map,local0,23) bot
+mkeys(mks,local0,local2)
+morder(mit,local0,bot,bot)
+morder(mit,local0,bot,45)
+morder(mit,local0,45,23)
+morder(mit,local0,23,bot)
+= mget(map,local2,45) 1
+= mget(map,local2,23) 1
+= mget(map,local2,45) bot
+= mget(map,local2,23) bot
+morder(mit,local2,bot,bot)
+morder(mit,local2,bot,45)
+morder(mit,local2,bot,23)
+morder(mit,local2,45,23)
+morder(mit,local2,23,bot)
+morder(mit,local2,bot,local3)
+morder(mit,local2,45,local3)
+morder(mit,local2,local3,45)
+morder(mit,local2,23,local3)
+morder(mit,local2,local3,23)
+morder(mit,local2,local3,bot)
+= local4 45
+= local4 23
+= local5 8
+= local5 19
+= fread(first,local6) 45
+= fread(first,local6) 23
+= fread(second,local6) 8
+= fread(second,local6) 19
+= mget(map,local1,1) local6
+= mget(map,local1,2) local6
+= mget(map,local1,1) bot
+= mget(map,local1,2) bot
+= mget(map,local1,0) bot
+morder(mit,local1,bot,bot)
+morder(mit,local1,bot,1)
+morder(mit,local1,bot,2)
+morder(mit,local1,2,1)
+morder(mit,local1,1,bot)
+morder(mit,local1,bot,local7)
+morder(mit,local1,1,local7)
+morder(mit,local1,local7,1)
+morder(mit,local1,2,local7)
+morder(mit,local1,local7,2)
+morder(mit,local1,local7,bot)
+morder(mit,local1,bot,tmpit)
+morder(mit,local1,1,tmpit)
+morder(mit,local1,tmpit,1)
+morder(mit,local1,2,tmpit)
+morder(mit,local1,tmpit,2)
+morder(mit,local1,tmpit,bot)
+= local8 45
+= local8 23
+= local9 8
+= local9 19
+= local10 8
+= local10 19
+= local10 local9
+= tmpk 0
+= tmpk 1
+= tmpk 2
+= tmpl 0
+= tmpl 1
+= tmpl 2
+= tmpi 0
+= tmpb 0
+= tmpb 1
+= tmpr7 0
+= tmpr7 1
+= tmpr10 0
+= tmpr10 1
+= fread(first,mget(map,local1,1)) 45
+= fread(second,mget(map,local1,1)) 8
+= fread(first,mget(map,local1,2)) 23
+= fread(second,mget(map,local1,2)) 19

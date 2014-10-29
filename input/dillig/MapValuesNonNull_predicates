@@ -1,0 +1,55 @@
+[method: dillig.MapValuesNonNull.main]
+= mget(map,local0,55) null
+= mget(map,local0,23) null
+= mget(map,local0,4) null
+= mget(map,local0,12) null
+= mget(map,local0,55) bot
+= mget(map,local0,23) bot
+= mget(map,local0,4) bot
+= mget(map,local0,12) bot
+= tmpr2 null
+= tmpr5 null
+= tmpr8 null
+= tmpr11 null
+mvalues(mvs,local0,local1)
+= mget(map,local1,1) null
+= mget(map,local1,2) null
+= mget(map,local1,3) null
+= mget(map,local1,4) null
+= mget(map,local1,1) bot
+= mget(map,local1,2) bot
+= mget(map,local1,3) bot
+= mget(map,local1,4) bot
+= local3 null
+= tmpk 1
+= tmpk 2
+= tmpk 3
+= tmpk 4
+= tmpr13 0
+= tmpr13 1
+= msize(msz,local0) 0
+= msize(msz,local0) 1
+= msize(msz,local0) 2
+= msize(msz,local0) 3
+= msize(msz,local0) 4
+morder(mit,local1,bot,bot)
+morder(mit,local1,bot,1)
+morder(mit,local1,bot,2)
+morder(mit,local1,bot,3)
+morder(mit,local1,bot,4)
+morder(mit,local1,1,2)
+morder(mit,local1,2,3)
+morder(mit,local1,3,4)
+morder(mit,local1,4,bot)
+morder(mit,local1,bot,local2)
+morder(mit,local1,local2,bot)
+morder(mit,local1,local2,1)
+morder(mit,local1,1,local2)
+morder(mit,local1,local2,2)
+morder(mit,local1,2,local2)
+morder(mit,local1,local2,3)
+morder(mit,local1,3,local2)
+morder(mit,local1,local2,4)
+morder(mit,local1,4,local2)
+= local4 0
+= local4 1

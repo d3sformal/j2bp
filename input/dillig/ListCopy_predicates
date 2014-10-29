@@ -1,0 +1,44 @@
+[method: dillig.ListCopy.main]
+= mget(map,local0,1) 4
+= mget(map,local0,2) 67
+= mget(map,local0,1) bot
+= mget(map,local0,2) bot
+= mget(map,local1,1) 4
+= mget(map,local1,2) 67
+= mget(map,local1,1) bot
+= mget(map,local1,2) bot
+= local6 4
+= local6 67
+= local7 4
+= local7 67
+= tmpk 0
+= tmpk 1
+= tmpk 2
+morder(mit,local0,bot,bot)
+morder(mit,local0,1,local2)
+morder(mit,local0,local2,1)
+morder(mit,local0,2,local2)
+morder(mit,local0,local2,2)
+morder(mit,local0,bot,1)
+morder(mit,local0,bot,2)
+morder(mit,local0,1,2)
+morder(mit,local0,2,bot)
+morder(mit,local0,bot,local2)
+morder(mit,local0,local2,bot)
+morder(mit,local1,bot,bot)
+morder(mit,local1,1,local5)
+morder(mit,local1,local5,1)
+morder(mit,local1,2,local5)
+morder(mit,local1,local5,2)
+morder(mit,local1,bot,1)
+morder(mit,local1,bot,2)
+morder(mit,local1,1,2)
+morder(mit,local1,2,bot)
+morder(mit,local1,bot,local5)
+morder(mit,local1,local5,bot)
+= local4 0
+= local4 1
+= local3 4
+= local3 67
+= tmpb 0
+= tmpb 1

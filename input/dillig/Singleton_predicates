@@ -1,0 +1,7 @@
+[method: dillig.Singleton.checkCorrectness]
+= local2 local1
+= local3 param1
+= local4 param2
+
+[method: dillig.Singleton.getShared]
+= local1 param1

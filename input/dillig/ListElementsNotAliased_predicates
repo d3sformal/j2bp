@@ -1,0 +1,53 @@
+[method: dillig.ListElementsNotAliased.main]
+= local0 2
+= mget(map,local1,1) tmpr1
+= mget(map,local1,2) tmpr1
+= mget(map,local1,1) local3
+= mget(map,local1,2) local3
+= mget(map,local1,1) local4
+= mget(map,local1,2) local4
+= mget(map,local1,1) mget(map,local1,2)
+= mget(map,local1,1) bot
+= mget(map,local1,2) bot
+= tmpk 0
+= tmpk 1
+= tmpk 2
+= local2 0
+= local2 1
+= local2 2
+= local2 local0
+< local2 local0
+= local5 0
+= local5 1
+= local5 2
+= local6 0
+= local6 1
+= local6 2
+= tmpi 0
+= tmpi 1
+= tmpi 2
+= tmpb 0
+= tmpb 1
+= msize(msz,local1) 0
+= msize(msz,local1) 1
+= msize(msz,local1) 2
+< local5 msize(msz,local1)
+< local6 msize(msz,local1)
+< local5 tmpr3
+< local6 tmpr4
+= tmpr3 2
+= tmpr4 2
+morder(mit,local1,bot,bot)
+morder(mit,local1,bot,1)
+morder(mit,local1,bot,2)
+morder(mit,local1,1,2)
+morder(mit,local1,2,bot)
+morder(mit,local1,bot,tmpit)
+morder(mit,local1,tmpit,bot)
+morder(mit,local1,tmpit,1)
+morder(mit,local1,1,tmpit)
+morder(mit,local1,tmpit,2)
+morder(mit,local1,2,tmpit)
+= local3 local4
+= local7 0
+= local7 1

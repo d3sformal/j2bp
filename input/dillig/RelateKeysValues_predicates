@@ -1,0 +1,7 @@
+[method: dillig.RelateKeysValues.bar]
+= param0 1
+= mget(map,local0,1) 3
+= mget(map,local0,1) 56
+= mget(map,local0,1) bot
+= local1 3
+= local1 56

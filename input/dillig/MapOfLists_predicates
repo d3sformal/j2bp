@@ -1,0 +1,78 @@
+[method: dillig.MapOfLists.main]
+= mget(map,local0,1) bot
+= mget(map,local0,2) bot
+= mget(map,local0,1) local1
+= mget(map,local0,2) local1
+= mget(map,local0,1) local2
+= mget(map,local0,2) local2
+= mget(map,local0,1) local4
+= mget(map,local0,2) local4
+= mget(map,local0,1) mget(map,local0,2)
+= msize(msz,local2) 0
+= msize(msz,local2) 1
+= msize(msz,local2) 2
+= msize(msz,local2) 3
+= local6 2
+= local6 3
+= local1 local2
+= local4 local1
+= local4 local2
+= mget(map,local1,1) 3
+= mget(map,local1,1) 7
+= mget(map,local1,2) 7
+= mget(map,local1,1) bot
+= mget(map,local1,2) bot
+= mget(map,local1,3) bot
+= mget(map,local1,0) bot
+= tmpk 0
+= tmpk 1
+= tmpk 2
+= tmpk 3
+= tmpl 0
+= tmpl 1
+= tmpl 2
+= tmpl 3
+= tmpi 0
+= tmpi 1
+= tmpb 0
+= tmpb 1
+= mget(map,local2,1) bot
+= mget(map,local2,2) bot
+= mget(map,local2,3) bot
+= mget(map,local2,0) bot
+morder(mit,local1,bot,bot)
+morder(mit,local1,bot,1)
+morder(mit,local1,bot,2)
+morder(mit,local1,2,1)
+morder(mit,local1,1,bot)
+morder(mit,local1,2,bot)
+morder(mit,local1,bot,local8)
+morder(mit,local1,local8,bot)
+morder(mit,local1,1,local8)
+morder(mit,local1,local8,1)
+morder(mit,local1,2,local8)
+morder(mit,local1,local8,2)
+morder(mit,local1,bot,tmpit)
+morder(mit,local1,tmpit,bot)
+morder(mit,local1,1,tmpit)
+morder(mit,local1,tmpit,1)
+morder(mit,local1,2,tmpit)
+morder(mit,local1,tmpit,2)
+morder(mit,local2,bot,bot)
+morder(mit,local2,bot,1)
+morder(mit,local2,1,bot)
+morder(mit,local2,bot,2)
+morder(mit,local2,2,bot)
+morder(mit,local2,2,1)
+morder(mit,local2,bot,3)
+morder(mit,local2,3,bot)
+morder(mit,local2,3,2)
+morder(mit,local2,bot,tmpit)
+morder(mit,local2,tmpit,bot)
+morder(mit,local2,1,tmpit)
+morder(mit,local2,tmpit,1)
+morder(mit,local2,2,tmpit)
+morder(mit,local2,tmpit,2)
+morder(mit,local2,3,tmpit)
+morder(mit,local2,tmpit,3)
+= local9 7

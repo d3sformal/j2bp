@@ -1,0 +1,10 @@
+[object: colltest.SetClient1]
+= mget(map,this.data,3) true
+= mget(map,this.data,5) true
+= msize(msz,this.data) 0
+= msize(msz,this.data) 2
+= msize(msz,this.data) 4
+
+[method: colltest.SetClient1.process]
+= local1 1
+= local2 1

@@ -1,0 +1,70 @@
+[object: paper.Image]
+= fread(top,mget(map,fread(rectangles,this),1)) 10
+= fread(left,mget(map,fread(rectangles,this),1)) 10
+= fread(right,mget(map,fread(rectangles,this),1)) 30
+= fread(bottom,mget(map,fread(rectangles,this),1)) 15
+= fread(color,mget(map,fread(rectangles,this),1)) 2
+= fread(top,mget(map,fread(rectangles,this),2)) 5
+= fread(left,mget(map,fread(rectangles,this),2)) 5
+= fread(right,mget(map,fread(rectangles,this),2)) 25
+= fread(bottom,mget(map,fread(rectangles,this),2)) 25
+= fread(color,mget(map,fread(rectangles,this),2)) 3
+= mget(map,fread(rectangles,this),1) bot
+= mget(map,fread(rectangles,this),2) bot
+morder(mit,fread(rectangles,this),bot,bot)
+morder(mit,fread(rectangles,this),bot,1)
+morder(mit,fread(rectangles,this),bot,2)
+morder(mit,fread(rectangles,this),1,2)
+morder(mit,fread(rectangles,this),2,bot)
+= aread(arr,aread(arr,fread(pixels,this),10),10) 0
+= aread(arr,aread(arr,fread(pixels,this),30),15) 0
+= aread(arr,aread(arr,fread(pixels,this),5),5) 0
+= aread(arr,aread(arr,fread(pixels,this),25),25) 0
+
+[method: paper.Image.load]
+= fread(top,local1) 10
+= fread(left,local1) 10
+= fread(right,local1) 30
+= fread(bottom,local1) 15
+= fread(color,local1) 2
+= fread(top,local1) 5
+= fread(left,local1) 5
+= fread(right,local1) 25
+= fread(bottom,local1) 25
+= fread(color,local1) 3
+= tmpk 0
+= tmpk 1
+= tmpk 2
+
+[method: paper.Image.render]
+= mget(map,fread(rectangles,this),1) local1
+= mget(map,fread(rectangles,this),2) local1
+= fread(top,local1) 10
+= fread(left,local1) 10
+= fread(right,local1) 30
+= fread(bottom,local1) 15
+= fread(color,local1) 2
+= fread(top,local1) 5
+= fread(left,local1) 5
+= fread(right,local1) 25
+= fread(bottom,local1) 25
+= fread(color,local1) 3
+morder(mit,fread(rectangles,this),bot,local4)
+morder(mit,fread(rectangles,this),local4,bot)
+morder(mit,fread(rectangles,this),1,local4)
+morder(mit,fread(rectangles,this),local4,1)
+morder(mit,fread(rectangles,this),2,local4)
+morder(mit,fread(rectangles,this),local4,2)
+= local2 10
+= local2 5
+= local2 30
+= local2 25
+= local3 10
+= local3 5
+= local3 15
+= local3 25
+= tmpk 0
+= tmpk 1
+= tmpk 2
+= tmpr3 0
+= tmpr3 1

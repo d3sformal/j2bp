@@ -1,0 +1,12 @@
+[object: colltest.MapClient1]
+= mget(map,this.data,3) 20
+= mget(map,this.data,7) 40
+= mget(map,this.data,5) 30
+= msize(msz,this.data) 0
+= msize(msz,this.data) 2
+= msize(msz,this.data) 4
+
+[method: colltest.MapClient1.process]
+= local1 1
+= local3 1
+> local4 25

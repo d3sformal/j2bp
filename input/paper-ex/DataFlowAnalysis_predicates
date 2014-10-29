@@ -1,0 +1,75 @@
+[method: paper.DataFlowAnalysis.main]
+= mget(map,local0,1) bot
+= mget(map,local0,2) bot
+= mget(map,local0,3) bot
+= mget(map,local0,4) bot
+= mget(map,local0,5) bot
+morder(mit,local0,bot,bot)
+morder(mit,local0,bot,1)
+morder(mit,local0,bot,2)
+morder(mit,local0,bot,3)
+morder(mit,local0,bot,4)
+morder(mit,local0,bot,5)
+morder(mit,local0,bot,0)
+morder(mit,local0,1,2)
+morder(mit,local0,2,3)
+morder(mit,local0,3,4)
+morder(mit,local0,4,5)
+morder(mit,local0,5,bot)
+= local1 null
+= mget(map,local2,1) bot
+= mget(map,local2,2) bot
+= mget(map,local2,3) bot
+= mget(map,local2,4) bot
+= mget(map,local2,5) bot
+= mget(map,local2,1) tmpr13
+= mget(map,local2,2) tmpr13
+= mget(map,local2,3) tmpr13
+= mget(map,local2,4) tmpr13
+= mget(map,local2,5) tmpr13
+= local3 1
+= local3 2
+= local3 3
+= local3 4
+= local3 5
+mkeys(mks,local0,local4)
+= mget(map,local4,1) bot
+= mget(map,local4,2) bot
+= mget(map,local4,3) bot
+= mget(map,local4,4) bot
+= mget(map,local4,5) bot
+morder(mit,local4,bot,bot)
+morder(mit,local4,bot,1)
+morder(mit,local4,bot,2)
+morder(mit,local4,bot,3)
+morder(mit,local4,bot,4)
+morder(mit,local4,bot,5)
+morder(mit,local4,5,bot)
+morder(mit,local4,1,2)
+morder(mit,local4,2,3)
+morder(mit,local4,3,4)
+morder(mit,local4,4,5)
+morder(mit,local4,bot,local5)
+morder(mit,local4,local5,bot)
+morder(mit,local4,1,local5)
+morder(mit,local4,local5,1)
+morder(mit,local4,2,local5)
+morder(mit,local4,local5,2)
+morder(mit,local4,3,local5)
+morder(mit,local4,local5,3)
+morder(mit,local4,4,local5)
+morder(mit,local4,local5,4)
+morder(mit,local4,5,local5)
+morder(mit,local4,local5,5)
+= tmpr11 0
+= tmpr11 1
+= tmpi 0
+= tmpb 0
+= tmpb 1
+= tmpk 0
+= tmpk 1
+= tmpk 2
+= local7 null
+= local8 null
+= mget(map,local2,local3) local7
+= mget(map,local2,local3) local8

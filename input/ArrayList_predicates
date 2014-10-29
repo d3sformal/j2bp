@@ -1,0 +1,12 @@
+[object: myjava.ArrayList]
+> this.size 0
+> this.data.length 0
+= this.size this.data.length
+
+[method: myjava.ArrayList.add]
+> local1.length 0
+
+[method: myjava.ArrayList.remove]
+<= this.size param1
+>= param1 0
+< local2 this.size

@@ -1,0 +1,33 @@
+[object: myjava.StringBuffer]
+= this.count 0
+= this.value.length 0
+= this.count this.value.length
+
+[method: myjava.StringBuffer.setLength]
+>= param1 0
+> param1 this.value.length
+
+[method: myjava.StringBuffer.charAt]
+>= param1 0
+< param1 this.count
+
+[method: myjava.StringBuffer.setCharAt]
+>= param1 0
+< param1 this.count
+
+[method: myjava.StringBuffer.append]
+>= local1 0
+> local1 this.value.length
+
+[method: myjava.StringBuffer.insert]
+>= local1 0
+> local1 this.value.length
+< param1 0
+> param1 this.count
+
+[method: myjava.StringBuffer.expandCapacity]
+>= param1 0
+> param1 this.value.length
+= local2 0
+< local2 this.count
+

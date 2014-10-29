@@ -1,0 +1,105 @@
+[method: paper.CyclingRace.main]
+= mget(map,local0,0) bot
+= mget(map,local0,1) bot
+= mget(map,local0,2) bot
+= mget(map,local0,3) bot
+= fread(idnum,mget(map,local0,1)) 2
+= fread(time,mget(map,local0,1)) 3725
+= fread(bonus,mget(map,local0,1)) 5
+= fread(idnum,mget(map,local0,2)) 56
+= fread(time,mget(map,local0,2)) 3569
+= fread(bonus,mget(map,local0,2)) 10
+= fread(idnum,mget(map,local0,3)) 123
+= fread(time,mget(map,local0,3)) 3766
+= fread(bonus,mget(map,local0,3)) 50
+morder(mit,local0,bot,bot)
+morder(mit,local0,bot,1)
+morder(mit,local0,bot,2)
+morder(mit,local0,bot,3)
+morder(mit,local0,1,bot)
+morder(mit,local0,2,bot)
+morder(mit,local0,3,bot)
+morder(mit,local0,1,2)
+morder(mit,local0,2,3)
+= local1 null
+= fread(idnum,local1) 2
+= fread(time,local1) 3725
+= fread(bonus,local1) 5
+= fread(idnum,local1) 56
+= fread(time,local1) 3569
+= fread(bonus,local1) 10
+= fread(idnum,local1) 123
+= fread(time,local1) 3766
+= fread(bonus,local1) 50
+= mget(map,local2,3720) bot
+= mget(map,local2,3559) bot
+= mget(map,local2,3716) bot
+= mget(map,local2,local3) bot
+morder(mit,local2,bot,bot)
+morder(mit,local2,bot,3720)
+morder(mit,local2,bot,3559)
+morder(mit,local2,bot,3716)
+morder(mit,local2,3716,3720)
+morder(mit,local2,3559,3716)
+morder(mit,local2,3559,3720)
+morder(mit,local2,3720,bot)
+morder(mit,local2,3559,bot)
+morder(mit,local2,3716,bot)
+morder(mit,local2,bot,tmpit)
+morder(mit,local2,tmpit,bot)
+morder(mit,local2,3720,tmpit)
+morder(mit,local2,tmpit,3720)
+morder(mit,local2,3559,tmpit)
+morder(mit,local2,tmpit,3559)
+morder(mit,local2,3716,tmpit)
+morder(mit,local2,tmpit,3716)
+morder(mit,local0,bot,local4)
+morder(mit,local0,local4,bot)
+morder(mit,local0,1,local4)
+morder(mit,local0,local4,1)
+morder(mit,local0,2,local4)
+morder(mit,local0,local4,2)
+morder(mit,local0,3,local4)
+morder(mit,local0,local4,3)
+= tmpk 0
+= tmpk 1
+= tmpk 2
+= tmpk 3
+= tmpk 3720
+= tmpk 3559
+= tmpk 3716
+> tmpk local3
+= tmpk local3
+= tmpb 0
+= tmpb 1
+= tmpi 0
+= local3 0
+= local3 3720
+= local3 3559
+= local3 3716
+> 3559 local3
+> 3716 local3
+> 3720 local3
+= tmpr4 0
+= tmpr4 1
+mvalues(mvs,local2,local5)
+= mget(map,local5,1) bot
+= mget(map,local5,2) bot
+= mget(map,local5,3) bot
+morder(mit,local5,bot,bot)
+morder(mit,local5,bot,1)
+morder(mit,local5,1,bot)
+morder(mit,local5,bot,2)
+morder(mit,local5,2,bot)
+morder(mit,local5,bot,3)
+morder(mit,local5,3,bot)
+morder(mit,local5,bot,local6)
+morder(mit,local5,local6,bot)
+morder(mit,local5,1,local6)
+morder(mit,local5,local6,1)
+morder(mit,local5,2,local6)
+morder(mit,local5,local6,2)
+morder(mit,local5,3,local6)
+morder(mit,local5,local6,3)
+= tmpr7 0
+= tmpr7 1

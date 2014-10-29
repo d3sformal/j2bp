@@ -1,0 +1,36 @@
+[method: dillig.MapCopy.main]
+= mget(map,local0,1) 10
+= mget(map,local0,2) 20
+= mget(map,local1,1) 10
+= mget(map,local1,2) 20
+mkeys(mks,local0,local5)
+morder(mit,local0,bot,bot)
+morder(mit,local0,bot,1)
+morder(mit,local0,bot,2)
+morder(mit,local0,1,2)
+morder(mit,local0,2,bot)
+morder(mit,local0,bot,local6)
+morder(mit,local0,local6,bot)
+morder(mit,local0,1,local6)
+morder(mit,local0,local6,1)
+morder(mit,local0,2,local6)
+morder(mit,local0,local6,2)
+morder(mit,local5,bot,bot)
+morder(mit,local5,bot,1)
+morder(mit,local5,bot,2)
+morder(mit,local5,1,2)
+morder(mit,local5,2,bot)
+= local2 1
+= local2 2
+= local3 10
+= local3 20
+= local4 10
+= local4 20
+morder(mit,local5,bot,local6)
+morder(mit,local5,1,local6)
+morder(mit,local5,local6,1)
+morder(mit,local5,2,local6)
+morder(mit,local5,local6,2)
+morder(mit,local5,local6,bot)
+= local7 0
+= local8 0

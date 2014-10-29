@@ -1,0 +1,55 @@
+[method: dillig.ReverseMap.main]
+= mget(map,local0,1) 10
+= mget(map,local0,2) 10
+= mget(map,local0,3) 10
+= mget(map,local0,1) 20
+= mget(map,local0,2) 20
+= mget(map,local0,3) 20
+= mget(map,local0,1) 30
+= mget(map,local0,2) 30
+= mget(map,local0,3) 30
+= mget(map,local1,10) 1
+= mget(map,local1,20) 2
+= mget(map,local1,30) 3
+mkeys(mks,local0,local5)
+morder(mit,local0,bot,bot)
+morder(mit,local0,bot,1)
+morder(mit,local0,bot,2)
+morder(mit,local0,bot,3)
+morder(mit,local0,1,2)
+morder(mit,local0,2,3)
+morder(mit,local0,3,bot)
+morder(mit,local5,bot,bot)
+morder(mit,local5,bot,1)
+morder(mit,local5,bot,2)
+morder(mit,local5,bot,3)
+morder(mit,local5,1,2)
+morder(mit,local5,2,3)
+morder(mit,local5,3,bot)
+= local2 1
+= local2 2
+= local2 3
+= local3 10
+= local3 20
+= local3 30
+= local4 1
+= local4 2
+= local4 3
+morder(mit,local0,bot,local6)
+morder(mit,local0,local6,bot)
+morder(mit,local0,1,local6)
+morder(mit,local0,local6,1)
+morder(mit,local0,2,local6)
+morder(mit,local0,local6,2)
+morder(mit,local0,3,local6)
+morder(mit,local0,local6,3)
+morder(mit,local5,bot,local6)
+morder(mit,local5,1,local6)
+morder(mit,local5,local6,1)
+morder(mit,local5,2,local6)
+morder(mit,local5,local6,2)
+morder(mit,local5,3,local6)
+morder(mit,local5,local6,3)
+morder(mit,local5,local6,bot)
+= local7 0
+= local8 0

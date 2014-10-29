@@ -1,0 +1,27 @@
+[method: dillig.Multimap.main]
+= mget(map,local0,1) local1
+= mget(map,local0,2) local2
+= mget(map,local0,3) local3
+= mget(map,local0,1) tmpr2
+= mget(map,local0,2) tmpr5
+= mget(map,local0,3) tmpr8
+= msize(msz,local2) 0
+= msize(msz,local2) 1
+= msize(msz,local2) 2
+= msize(msz,local2) 3
+= msize(msz,tmpr5) 0
+= tmpr2 local1
+= tmpr5 local2
+= tmpr8 local3
+= mget(map,tmpr5,3) bot
+= mget(map,tmpr5,4) bot
+= mget(map,tmpr5,6) bot
+= mget(map,local2,3) bot
+= mget(map,local2,4) bot
+= mget(map,local2,6) bot
+= mget(map,tmpr8,2) bot
+= mget(map,local3,2) bot
+= mget(map,local3,2) 1
+= local5 0
+= local5 1
+= local4 3
