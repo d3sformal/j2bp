@@ -860,7 +860,7 @@ class ContainerMethodCallAbstractor extends j2bp.DefaultMethodCallAbstractor wit
 				}
 				else // if ((firstPosExpr != bottomExpr) && (secondPosExpr != bottomExpr))
 				{
-					posWP = new Disjunction(List[LogicFormula]( new Conjunction(List[LogicFormula]( mapsAliasedClause, firstPosExprNotEqualKeyClause, new Disjunction(List[LogicFormula]( new Conjunction(List[LogicFormula]( secondPosExprEqualKeyClause, firstPosExprNotEqualKeyBehindClause, new Negation(new BinaryPredicate("=", ContainerExpressionUtils.createMapGetExpr(mapObj, firstPosExpr), bottomExpr)) )), upPred )) )), new Conjunction(List[LogicFormula]( mapsAliasedClause, firstPosExprEqualKeyClause, secondPosExprEqualKeyBehindClause )), new Conjunction(List[LogicFormula]( mapsNotAliasedClause, upPred )) ))
+					posWP = new Disjunction(List[LogicFormula]( new Conjunction(List[LogicFormula]( mapsAliasedClause, firstPosExprNotEqualKeyClause, new Disjunction(List[LogicFormula]( new Conjunction(List[LogicFormula]( secondPosExprEqualKeyClause, firstPosExprNotEqualKeyBehindClause, new Negation(new BinaryPredicate("=", ContainerExpressionUtils.createMapGetExpr(mapObj, firstPosExpr), bottomExpr)) )), new Conjunction(List[LogicFormula]( secondPosExprNotEqualKeyBehindClause, upPred )), )) )), new Conjunction(List[LogicFormula]( mapsAliasedClause, firstPosExprEqualKeyClause, secondPosExprEqualKeyBehindClause )), new Conjunction(List[LogicFormula]( mapsNotAliasedClause, upPred )) ))
 				}
 				
 				updatePred2PosWP.put(upPred, posWP)
