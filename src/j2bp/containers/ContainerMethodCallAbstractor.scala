@@ -690,9 +690,9 @@ class ContainerMethodCallAbstractor extends j2bp.DefaultMethodCallAbstractor wit
 					updatePred2PosWP.put(upPred, new Negation(noRealValueFormula))
 				}
 			}
-			else if ( upPred.containsOperand(retVarExpr) && upPred.isInstanceOf[BinaryPredicate] && ( (upPred.getOperator() == "=") || (upPred.getOperator() == "!=") ) )
+			else if ( upPred.containsOperand(retVarExpr) && upPred.isInstanceOf[BinaryPredicate] && ( (upPred.getOperator() == "=") || (upPred.getOperator() == "!=") || (upPred.getOperator() == "<") || (upPred.getOperator() == "<=") || (upPred.getOperator() == ">") || (upPred.getOperator() == ">=") ) )
 			{
-				// this correctly handles operator = and operator != too
+				// this correctly handles all the relational operators
 
 				var posWP = new Conjunction(List[LogicFormula]( mapEqualsLogicVarClause, FormulaUtils.copyWithReplace(upPred, retVarExpr.toString(), mgetLogicVarExpr.toString()) )) 
 				

@@ -1203,6 +1203,9 @@ class ContainerPredicateSemanticsModel extends j2bp.DefaultPredicateSemanticsMod
 						// logic variable "fla" (used for map values) cannot match the symbol "bottom"
 						if ((tgtVarNameExpr == BasicContainerModel.LOGIC_ANY_EXPR) && (posMatchExpr == BasicContainerModel.BOTTOM_EXPR)) dropMatchPred = true
 						
+						// logic variable "fla" (used for map values) cannot match the temporary variable "tmpk" (used for map keys)
+						if ((tgtVarNameExpr == BasicContainerModel.LOGIC_ANY_EXPR) && (posMatchExpr == BasicContainerModel.TMP_KEY_EXPR)) dropMatchPred = true
+						
 						// logic variable representing a map cannot match integer constant or some program variable that does not have a map type
 						if (tgtVarNameExpr == BasicContainerModel.LOGIC_MAP_EXPR)
 						{
