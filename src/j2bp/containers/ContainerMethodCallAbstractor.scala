@@ -913,11 +913,11 @@ class ContainerMethodCallAbstractor extends j2bp.DefaultMethodCallAbstractor wit
 				
 				if ((firstPosExpr == bottomExpr) && (secondPosExpr != bottomExpr))
 				{
-					posWP = new Disjunction(List[LogicFormula]( new Conjunction(List[LogicFormula]( mapsAliasedClause, secondPosExprNotEqualKeyClause, new UnaryPredicate("", ContainerExpressionUtils.createMapOrderExpr(mapObj, bottomExpr, argValues(0))), new UnaryPredicate("", ContainerExpressionUtils.createMapOrderExpr(mapObj, argValues(0), secondPosExpr)) )), new Conjunction(List[LogicFormula]( mapsNotAliasedClause, upPred )) ))
+					posWP = new Disjunction(List[LogicFormula]( new Conjunction(List[LogicFormula]( mapsAliasedClause, secondPosExprNotEqualKeyClause, new Disjunction(List[LogicFormula]( new Conjunction(List[LogicFormula]( new UnaryPredicate("", ContainerExpressionUtils.createMapOrderExpr(mapObj, bottomExpr, argValues(0))), new UnaryPredicate("", ContainerExpressionUtils.createMapOrderExpr(mapObj, argValues(0), secondPosExpr)) )), upPred )) )), new Conjunction(List[LogicFormula]( mapsNotAliasedClause, upPred )) ))
 				}
 				else if ((firstPosExpr != bottomExpr) && (secondPosExpr == bottomExpr))
 				{
-					posWP = new Disjunction(List[LogicFormula]( new Conjunction(List[LogicFormula]( mapsAliasedClause, firstPosExprNotEqualKeyClause, new UnaryPredicate("", ContainerExpressionUtils.createMapOrderExpr(mapObj, firstPosExpr, argValues(0))), new UnaryPredicate("", ContainerExpressionUtils.createMapOrderExpr(mapObj, argValues(0), bottomExpr)) )), new Conjunction(List[LogicFormula]( mapsNotAliasedClause, upPred )) ))						
+					posWP = new Disjunction(List[LogicFormula]( new Conjunction(List[LogicFormula]( mapsAliasedClause, firstPosExprNotEqualKeyClause, new Disjunction(List[LogicFormula]( new Conjunction(List[LogicFormula]( new UnaryPredicate("", ContainerExpressionUtils.createMapOrderExpr(mapObj, firstPosExpr, argValues(0))), new UnaryPredicate("", ContainerExpressionUtils.createMapOrderExpr(mapObj, argValues(0), bottomExpr)) )), upPred )) )), new Conjunction(List[LogicFormula]( mapsNotAliasedClause, upPred )) ))
 				}
 				else if ((firstPosExpr == bottomExpr) && (secondPosExpr == bottomExpr))
 				{					
