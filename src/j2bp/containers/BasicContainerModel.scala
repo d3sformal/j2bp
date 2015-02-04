@@ -367,7 +367,10 @@ object BasicContainerModel
 			{
 				val findkeySeq = getFindKeySequence(targetObj, argValues(0), TMP_KEY_EXPR)
 
-				val resSeq = findkeySeq ++ List[(String, Expression, Array[Expression], Array[Expression])]( ("moveNext", TMP_ITER_EXPR, new Array(0), new Array(0)), ("getCurrent", TMP_ITER_EXPR, new Array(0), Array(TMP_LOCAL_EXPR)), ("remove", targetObj, Array(TMP_KEY_EXPR), new Array(0)), ("putAhead", targetObj, Array(TMP_KEY_EXPR, argValues(1), TMP_LOCAL_EXPR), new Array(0)) )
+				val normaladdLabelName = ContainerAbstractionData.getUniqueLabelName("normaladd")
+				val doneLabelName = ContainerAbstractionData.getUniqueLabelName("done")
+				
+				val resSeq = findkeySeq ++ List[(String, Expression, Array[Expression], Array[Expression])]( ("hasMore", TMP_ITER_EXPR, new Array(0), Array(TMP_BOOL_EXPR)), ("ifeq", Constants.EMPTY_STR_EXPR, Array(TMP_BOOL_EXPR, Constants.ZERO_EXPR, new StringExpression(normaladdLabelName)), new Array(0)), ("moveNext", TMP_ITER_EXPR, new Array(0), new Array(0)), ("getCurrent", TMP_ITER_EXPR, new Array(0), Array(TMP_LOCAL_EXPR)), ("remove", targetObj, Array(TMP_KEY_EXPR), new Array(0)), ("putAhead", targetObj, Array(TMP_KEY_EXPR, argValues(1), TMP_LOCAL_EXPR), new Array(0)), ("goto", Constants.EMPTY_STR_EXPR, Array(new StringExpression(doneLabelName)), new Array(0)), ("label", Constants.EMPTY_STR_EXPR, Array(new StringExpression(normaladdLabelName)), new Array(0)), ("remove", targetObj, Array(TMP_KEY_EXPR), new Array(0)), ("put", targetObj, Array(TMP_KEY_EXPR, argValues(1)), new Array[Expression](0)), ("label", Constants.EMPTY_STR_EXPR, Array(new StringExpression(doneLabelName)), new Array(0)) )
 				
 				return resSeq
 			}
