@@ -20,4 +20,5 @@ javac -cp "$EXAMPLES_CP" -g -sourcepath ./examples/colltest -d ./build/examples 
 javac -cp "$EXAMPLES_CP" -g -sourcepath ./examples/progtest -d ./build/examples `find ./examples/progtest -name *.java | xargs`
 javac -cp "$EXAMPLES_CP" -g -sourcepath ./examples/dillig -d ./build/examples `find ./examples/dillig -name *.java | xargs`
 javac -cp "$EXAMPLES_CP" -g -sourcepath ./examples/paper-ex -d ./build/examples `find ./examples/paper-ex -name *.java | xargs`
+javac -cp "$EXAMPLES_CP" -g -sourcepath ./examples/vutbr -d ./build/examples `find ./examples/vutbr -name *.java | xargs`
 
