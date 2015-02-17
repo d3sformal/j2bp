@@ -1,0 +1,74 @@
+[method: vutbr.RewriteList.main]
+
+>= msize(msz,local0) 4
+
+= local1 3
+
+= local2 0
+= local2 1
+= local2 2
+= local2 3
+< local2 local1
+= local2 local1
+
+= local4 0
+= local4 10
+
+= mget(map,local0,1) bot
+= mget(map,local0,1) 0
+= mget(map,local0,1) 10
+= mget(map,local0,2) bot
+= mget(map,local0,2) 0
+= mget(map,local0,2) 10
+= mget(map,local0,3) bot
+= mget(map,local0,3) 0
+= mget(map,local0,3) 10
+
+morder(mit,local0,1,2)
+morder(mit,local0,1,local3)
+morder(mit,local0,2,3)
+morder(mit,local0,2,local3)
+morder(mit,local0,3,bot)
+morder(mit,local0,3,local3)
+morder(mit,local0,1,bot)
+morder(mit,local0,2,bot)
+morder(mit,local0,bot,1)
+morder(mit,local0,bot,2)
+morder(mit,local0,bot,3)
+morder(mit,local0,bot,bot)
+morder(mit,local0,bot,local3)
+morder(mit,local0,local3,1)
+morder(mit,local0,local3,2)
+morder(mit,local0,local3,3)
+morder(mit,local0,local3,bot)
+
+= tmpk 0
+= tmpk 1
+= tmpk 2
+= tmpk 3
+
+= tmpb 0
+= tmpb 1
+
+= tmpl 0
+= tmpl 1
+= tmpl 2
+= tmpl 3
+
+= tmpi 0
+= tmpi 1
+= tmpi 2
+= tmpi 3
+
+morder(mit,local0,1,tmpit)
+morder(mit,local0,2,tmpit)
+morder(mit,local0,3,tmpit)
+morder(mit,local0,bot,tmpit)
+morder(mit,local0,tmpit,1)
+morder(mit,local0,tmpit,2)
+morder(mit,local0,tmpit,3)
+morder(mit,local0,tmpit,bot)
+
+= tmpr5 0
+= tmpr5 1
+
